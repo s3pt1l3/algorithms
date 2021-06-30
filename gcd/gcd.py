@@ -5,4 +5,3 @@ def gcd(a, b):
         else:
             b = b % a
     return max(a, b)
-print(gcd(2, 10))
