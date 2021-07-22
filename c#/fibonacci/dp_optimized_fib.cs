@@ -19,14 +19,15 @@ namespace json_app
             {
                 return pos;
             }
-            int[] nums = new int[pos + 1];
-            nums[0] = 0;
-            nums[1] = 1;
+            int a = 0;
+            int b = 1;
             for (int i = 2; i < pos + 1; ++i)
             {
-                nums[i] = nums[i - 2] + nums[i - 1];
+                int c = a + b;
+                a = b;
+                b = c;
             }
-            return nums[pos];
+            return b;
         }
     }
 }
